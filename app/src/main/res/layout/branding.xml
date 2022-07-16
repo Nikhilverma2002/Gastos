@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:paddingStart="20dp"
     android:paddingTop="10dp"
-    android:scrollbars="none"
     android:paddingBottom="20dp"
     android:paddingEnd="20dp"
     android:layout_height="match_parent">
@@ -19,37 +18,7 @@
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="todo" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="6dp"
-        android:gravity="start"
-        android:text="3/5"
-        android:fontFamily="@font/plus_bold"
-        android:textColor="#909090"
-        android:textFontWeight="700"
-        android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        tools:targetApi="p" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="start"
-        android:text="Completed"
-        android:fontFamily="@font/plus_medium"
-        android:textColor="#909090"
-        android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
-
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView3"
@@ -57,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:gravity="start"
-        android:text="My Discounts"
+        android:text="My Designs"
         android:textColor="#212121"
         android:textFontWeight="700"
         android:fontFamily="@font/plus_regular"
@@ -73,7 +42,7 @@
         android:fontFamily="@font/plus_regular"
         android:textFontWeight="500"
         android:gravity="start"
-        android:text="List of discounts provided to customers."
+        android:text="View designs for branding."
         android:textColor="#909090"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="@+id/textView3"
@@ -103,7 +72,7 @@
                 android:foregroundGravity="center"
                 android:padding="15dp"
                 android:background="@drawable/bg_discount"
-                android:src="@drawable/ic_ticket_discount"
+                android:src="@drawable/ic_branding"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -115,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:gravity="center"
-                android:text="No Discounts Yet"
+                android:text="@string/no_designs_yet"
                 android:fontFamily="@font/plus_regular"
                 android:textColor="#212121"
                 android:textFontWeight="700"
@@ -134,7 +103,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 android:fontFamily="@font/plus_regular"
-                android:text="Add discount to the store store page to attract more customers!"
+                android:text="You don’t have a design for your brand yet .Request Now!"
                 android:textColor="#B1BCD2"
                 android:textFontWeight="500"
                 android:textSize="13sp"
@@ -144,27 +113,4 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
-
-
-    <TextView
-        android:id="@+id/bharatpay"
-        android:layout_width="0dp"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_layout"
-        android:fontFamily="@font/plus_regular"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:text="Add Discount"
-        android:textColor="#181818"
-        android:textFontWeight="700"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

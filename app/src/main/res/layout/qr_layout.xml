@@ -9,128 +9,129 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:baselineAligned="false"
-        android:padding="5dp"
         android:background="@drawable/bg_layout"
-        android:orientation="horizontal">
-
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_bharatpay" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="start"
-            android:text="UPI ID"
-            android:textStyle="bold"
-            android:textColor="#181818"
-            android:textFontWeight="700"
-            android:fontFamily="@font/plus_regular"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
-            app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="start"
-            android:text="9872382431@ybl"
-            android:letterSpacing="0.1"
-            android:textColor="#909090"
-            android:textFontWeight="500"
-            android:fontFamily="@font/plus_regular"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
-            app:layout_constraintEnd_toEndOf="@+id/textView8"
-            app:layout_constraintHorizontal_bias="0.2"
-            app:layout_constraintStart_toStartOf="@+id/textView8"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
         <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bharatpay" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout2">
 
 
             <TextView
-                android:id="@+id/bharatpay"
-                android:layout_marginTop="10dp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
-                android:textFontWeight="600"
-                android:textSize="12sp"
-                android:textColor="#00AECA"
-                android:fontFamily="@font/plus_regular"
+                android:id="@+id/textView10"
                 android:layout_width="wrap_content"
-                android:text="BharatPe"
-                android:background="@drawable/bg_bharatpay"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_regular"
+                android:gravity="start"
+                android:text="UPI ID"
+                android:textColor="#181818"
+                android:textFontWeight="700"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
 
             <TextView
-                android:id="@+id/primary"
-                android:layout_marginTop="10dp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:layout_marginStart="10dp"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
-                android:textFontWeight="600"
-                android:textSize="12sp"
-                android:textColor="@color/white"
-                android:fontFamily="@font/plus_regular"
+                android:id="@+id/wifi"
                 android:layout_width="wrap_content"
-                android:text="Primary"
-                android:background="@drawable/bg_primary"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/plus_regular"
+                android:gravity="start"
+                android:letterSpacing="0.1"
+                android:text="9872382431@ybl"
+                android:textColor="#909090"
+                android:textFontWeight="500"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintEnd_toEndOf="@+id/textView8"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/bharatpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_bharatpay"
+                    android:fontFamily="@font/plus_regular"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="8dp"
+                    android:text="BharatPe"
+                    android:textColor="#00AECA"
+                    android:textFontWeight="600"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_primary"
+                    android:fontFamily="@font/plus_regular"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="8dp"
+                    android:text="Primary"
+                    android:textColor="@color/white"
+                    android:textFontWeight="600"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
-
-
-
-    </LinearLayout>
-
         <ImageView
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
-            android:src="@drawable/ic_menu_vertical"
-            android:layout_height="wrap_content"/>
+            android:src="@drawable/ic_menu_vertical" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

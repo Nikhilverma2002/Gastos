@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:paddingStart="20dp"
     android:paddingTop="10dp"
-    android:scrollbars="none"
     android:paddingBottom="20dp"
     android:paddingEnd="20dp"
     android:layout_height="match_parent">
@@ -56,7 +55,7 @@
         android:layout_height="wrap_content"
         android:baselineAligned="false"
         android:orientation="vertical"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,41 +69,48 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="15dp"
+            android:padding="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
-
                 android:layout_height="wrap_content">
 
-
-
-
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/delivery"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:background="@drawable/bg_services"
                     android:padding="20dp"
                     android:src="@drawable/ic_delivery"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/plus_regular"
+                    android:gravity="center"
+                    android:text="Delivery"
+                    android:textColor="#626262"
+                    android:textFontWeight="500"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/delivery"
+                    app:layout_constraintStart_toStartOf="@+id/delivery"
+                    app:layout_constraintTop_toBottomOf="@+id/delivery" />
 
                 <ImageView
                     android:id="@+id/elliipse"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_ellipse"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView7"
-                    app:layout_constraintStart_toStartOf="@+id/imageView7"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                    app:layout_constraintBottom_toBottomOf="@+id/delivery"
+                    app:layout_constraintEnd_toEndOf="@+id/delivery"
+                    app:layout_constraintStart_toStartOf="@+id/delivery"
+                    app:layout_constraintTop_toBottomOf="@+id/delivery"
                     />
 
                 <ImageView
@@ -112,14 +118,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_done"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView7"
-                    app:layout_constraintStart_toStartOf="@+id/imageView7"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                    app:layout_constraintBottom_toBottomOf="@+id/delivery"
+                    app:layout_constraintEnd_toEndOf="@+id/delivery"
+                    app:layout_constraintStart_toStartOf="@+id/delivery"
+                    app:layout_constraintTop_toBottomOf="@+id/delivery"
                     />
 
                 <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/cash"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -127,8 +133,7 @@
                     android:background="@drawable/bg_services"
                     android:padding="20dp"
                     android:src="@drawable/ic_delivery"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                    app:layout_constraintStart_toEndOf="@+id/delivery"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
@@ -136,10 +141,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_ellipse"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView6"
-                    app:layout_constraintStart_toStartOf="@+id/imageView6"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                    app:layout_constraintBottom_toBottomOf="@+id/cash"
+                    app:layout_constraintEnd_toEndOf="@+id/cash"
+                    app:layout_constraintStart_toStartOf="@+id/cash"
+                    app:layout_constraintTop_toBottomOf="@+id/cash"
                     />
 
                 <ImageView
@@ -148,14 +153,28 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_done"
                     android:visibility="gone"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView6"
-                    app:layout_constraintStart_toStartOf="@+id/imageView6"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                    app:layout_constraintBottom_toBottomOf="@+id/cash"
+                    app:layout_constraintEnd_toEndOf="@+id/cash"
+                    app:layout_constraintStart_toStartOf="@+id/cash"
+                    app:layout_constraintTop_toBottomOf="@+id/cash"
                     />
 
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/plus_regular"
+                    android:gravity="center"
+                    android:text="Cash-in-hand"
+                    android:textColor="#626262"
+                    android:textFontWeight="500"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/cash"
+                    app:layout_constraintStart_toStartOf="@+id/cash"
+                    app:layout_constraintTop_toBottomOf="@+id/cash" />
+
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/dining"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -163,9 +182,8 @@
                     android:background="@drawable/bg_services"
                     android:padding="20dp"
                     android:src="@drawable/ic_delivery"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageView6"
+                    app:layout_constraintStart_toEndOf="@+id/cash"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
@@ -173,10 +191,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_ellipse"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView10"
-                    app:layout_constraintStart_toStartOf="@+id/imageView10"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                    app:layout_constraintBottom_toBottomOf="@+id/dining"
+                    app:layout_constraintEnd_toEndOf="@+id/dining"
+                    app:layout_constraintStart_toStartOf="@+id/dining"
+                    app:layout_constraintTop_toBottomOf="@+id/dining"
                     />
 
                 <ImageView
@@ -184,11 +202,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_done"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView10"
-                    app:layout_constraintStart_toStartOf="@+id/imageView10"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                    app:layout_constraintBottom_toBottomOf="@+id/dining"
+                    app:layout_constraintEnd_toEndOf="@+id/dining"
+                    app:layout_constraintStart_toStartOf="@+id/dining"
+                    app:layout_constraintTop_toBottomOf="@+id/dining"
                     />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/plus_regular"
+                    android:gravity="center"
+                    android:text="@string/dining"
+                    android:textColor="#626262"
+                    android:textFontWeight="500"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/dining"
+                    app:layout_constraintStart_toStartOf="@+id/dining"
+                    app:layout_constraintTop_toBottomOf="@+id/dining" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
@@ -198,28 +230,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginTop="15dp"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="15dp"
+            android:padding="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
-
                 android:layout_height="match_parent">
 
 
                 <ImageView
-                    android:id="@+id/imageView9"
+                    android:id="@+id/takeaway"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:background="@drawable/bg_services"
                     android:padding="20dp"
                     android:src="@drawable/ic_delivery"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -228,35 +259,47 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_ellipse"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView9"
-                    app:layout_constraintStart_toStartOf="@+id/imageView9"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView9"
-                    />
+                    app:layout_constraintBottom_toBottomOf="@+id/takeaway"
+                    app:layout_constraintEnd_toEndOf="@+id/takeaway"
+                    app:layout_constraintStart_toStartOf="@+id/takeaway"
+                    app:layout_constraintTop_toBottomOf="@+id/takeaway" />
 
                 <ImageView
                     android:id="@+id/right3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_done"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView9"
-                    app:layout_constraintStart_toStartOf="@+id/imageView9"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView9"
-                    />
+                    app:layout_constraintBottom_toBottomOf="@+id/takeaway"
+                    app:layout_constraintEnd_toEndOf="@+id/takeaway"
+                    app:layout_constraintStart_toStartOf="@+id/takeaway"
+                    app:layout_constraintTop_toBottomOf="@+id/takeaway" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/plus_regular"
+                    android:gravity="center"
+                    android:text="@string/dining"
+                    android:textColor="#626262"
+                    android:textFontWeight="500"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/takeaway"
+                    app:layout_constraintStart_toStartOf="@+id/takeaway"
+                    app:layout_constraintTop_toBottomOf="@+id/takeaway" />
 
 
                 <ImageView
-                    android:id="@+id/imageView8"
+                    android:id="@+id/air"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
                     android:background="@drawable/bg_services"
                     android:padding="20dp"
-                    android:layout_marginStart="25dp"
                     android:src="@drawable/ic_delivery"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageView9"
+                    app:layout_constraintStart_toEndOf="@+id/takeaway"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
@@ -264,25 +307,37 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_ellipse"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView8"
-                    app:layout_constraintStart_toStartOf="@+id/imageView8"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView8"
-                    />
+                    app:layout_constraintBottom_toBottomOf="@+id/air"
+                    app:layout_constraintEnd_toEndOf="@+id/air"
+                    app:layout_constraintStart_toStartOf="@+id/air"
+                    app:layout_constraintTop_toBottomOf="@+id/air" />
 
                 <ImageView
                     android:id="@+id/right4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_done"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView8"
-                    app:layout_constraintStart_toStartOf="@+id/imageView8"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView8"
-                    />
+                    app:layout_constraintBottom_toBottomOf="@+id/air"
+                    app:layout_constraintEnd_toEndOf="@+id/air"
+                    app:layout_constraintStart_toStartOf="@+id/air"
+                    app:layout_constraintTop_toBottomOf="@+id/air" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/plus_regular"
+                    android:gravity="center"
+                    android:text="@string/air_conditioning"
+                    android:textColor="#626262"
+                    android:textFontWeight="500"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/air"
+                    app:layout_constraintStart_toStartOf="@+id/air"
+                    app:layout_constraintTop_toBottomOf="@+id/air" />
 
                 <ImageView
-                    android:id="@+id/textView11"
+                    android:id="@+id/wifi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -290,9 +345,8 @@
                     android:background="@drawable/bg_services"
                     android:padding="20dp"
                     android:src="@drawable/ic_delivery"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageView8"
+                    app:layout_constraintStart_toEndOf="@+id/air"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
@@ -300,11 +354,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_ellipse"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView11"
-                    app:layout_constraintEnd_toEndOf="@+id/textView11"
-                    app:layout_constraintStart_toStartOf="@+id/textView11"
-                    app:layout_constraintTop_toBottomOf="@+id/textView11"
-                    />
+                    app:layout_constraintBottom_toBottomOf="@+id/wifi"
+                    app:layout_constraintEnd_toEndOf="@+id/wifi"
+                    app:layout_constraintStart_toStartOf="@+id/wifi"
+                    app:layout_constraintTop_toBottomOf="@+id/wifi" />
 
                 <ImageView
                     android:id="@+id/right5"
@@ -312,11 +365,24 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_done"
                     android:visibility="gone"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView11"
-                    app:layout_constraintEnd_toEndOf="@+id/textView11"
-                    app:layout_constraintStart_toStartOf="@+id/textView11"
-                    app:layout_constraintTop_toBottomOf="@+id/textView11"
-                    />
+                    app:layout_constraintBottom_toBottomOf="@+id/wifi"
+                    app:layout_constraintEnd_toEndOf="@+id/wifi"
+                    app:layout_constraintStart_toStartOf="@+id/wifi"
+                    app:layout_constraintTop_toBottomOf="@+id/wifi" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/plus_regular"
+                    android:gravity="center"
+                    android:text="@string/wifi"
+                    android:textColor="#626262"
+                    android:textFontWeight="500"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/wifi"
+                    app:layout_constraintStart_toStartOf="@+id/wifi"
+                    app:layout_constraintTop_toBottomOf="@+id/wifi" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

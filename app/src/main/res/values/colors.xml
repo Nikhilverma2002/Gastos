@@ -7,4 +7,29 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="Gray">#202832</color>
+
+    <color name="gastos">#2D796D</color>
+
+    <color name="lightGreen">#10B981</color>
+    <color name="greyAllSet">#A3A3A3</color>
+    <color name="greyDark">#909090</color>
+    <color name="bE">#8E8E8E</color>
+    <color name="darkGreen">#2D796D</color>
+    <color name="barcode">#D7EDFF</color>
+    <color name="nBarcode">#ECE7FF</color>
+    <color name="wallet">#E2FFF7</color>
+    <color name="setting">#FFF4D4</color>
+    <color name="text">#626262</color>
+    <color name="strokeColor">#DCE2EF</color>
+    <color name="avail">#ADADAD</color>
+    <color name="gr">#10B981</color>
+    <color name="fadeBlack">#393939</color>
+    <color name="red">#EB5757</color>
+    <color name="cornor">#DCE2EF</color>
+
+
+    <color name="gastos_green">#004445</color>
+
 </resources>
